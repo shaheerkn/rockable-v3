@@ -1,0 +1,62 @@
+.hero {
+  padding-block: 115px 0;
+  color: var(--color-black);
+
+  @media (max-width: 1440px) {
+   padding-block: 93px 0;
+  }
+
+  .tagline {
+    margin-bottom: 20px;
+    line-height: 12px;
+  }
+
+  h1 + p {
+    width: 100%;
+    max-width: 844px;
+    margin-inline: auto;
+    margin-top: 33px;
+  }
+
+  .site-brand {
+    margin-bottom: 190px;
+
+    img {
+      max-width: 100%;
+    }
+
+    @media (max-width: 1440px) {
+      margin-bottom: 100px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-bottom: 73px;
+    }
+  }
+
+  &__content {
+    margin-block: 122px 0;
+
+    @media (max-width: 1024px) {
+      margin-block: 63px 0;
+
+      h1 + p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.contact-form {
+    .site-brand {
+      margin-bottom: 115px;
+
+      @media (max-width: 1440px) {
+        margin-bottom: 100px;
+      }
+
+      @media (max-width: 1024px) {
+        margin-bottom: 73px;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.site-footer {
+  padding-block: 270px 25px;
+
+  @media (max-width: 768px) {
+    padding-top: 115px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 18px;
+    }
+  }
+}

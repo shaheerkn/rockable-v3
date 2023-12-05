@@ -1,0 +1,48 @@
+.logos {
+  color: var(--color-black);
+
+  .container {
+    padding-block:  250px 270px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 63px;
+
+    @media (max-width: 1024px) {
+      padding-block: 100px;
+    }
+
+     @media (max-width: 1300px) and (min-width: 1200px) {
+      zoom: 65%;
+    }
+  }
+
+  &__logo {
+    flex-basis: 410px;
+    height: 214px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 1690px) and (min-width: 1300px) {
+      flex-basis: 25%;
+    }
+
+    img {
+      transition: 0.2s;
+      max-width: 100%;
+    }
+
+    img:hover {
+      scale: 1.1;
+    }
+  }
+
+  .flex-break {
+    border: 1px solid transparent;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+}
