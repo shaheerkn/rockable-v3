@@ -1,48 +1,54 @@
 .logos {
   color: var(--color-black);
+  padding-block: 140px 170px;
+
+  @media (max-width: 1024px) {
+    padding-block: 60px 128px;
+  }
 
   .container {
-    padding-block:  250px 270px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 63px;
+    column-gap: 73px;
 
-    @media (max-width: 1024px) {
-      padding-block: 100px;
+
+    @media (max-width: 1510px) {
+      column-gap: 20px;
     }
 
-     @media (max-width: 1300px) and (min-width: 1200px) {
-      zoom: 65%;
+    @media (max-width: 1245px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 32px;
     }
+  }
+
+  .container + .container {
+    margin-top: 40px;
   }
 
   &__logo {
-    flex-basis: 410px;
-    height: 214px;
+    width: 310px;
+    height: 310px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--color-black);
+    border-radius: 50%;
+    transition: background-color 1s;
 
-    @media (max-width: 1690px) and (min-width: 1300px) {
-      flex-basis: 25%;
+    svg, path, rect {
+      fill: var(--primary-color);
+      stroke: var(--primary-color);
     }
 
-    img {
-      transition: 0.2s;
-      max-width: 100%;
-    }
-
-    img:hover {
-      scale: 1.1;
-    }
-  }
-
-  .flex-break {
-    border: 1px solid transparent;
-
-    @media (max-width: 1024px) {
-      display: none;
+    @media (max-width: 1350px) and (min-width: 1245px) {
+      width: 280px;
+      height: 280px;
     }
   }
+
+
 }

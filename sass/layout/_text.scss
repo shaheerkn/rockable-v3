@@ -1,4 +1,6 @@
 .text {
+  color: var(--color-black);
+
   .section-description {
     margin-block: 8px 90px;
   }
@@ -24,13 +26,41 @@
     }
   }
 
+  &#designed {
+    .content {
+      max-width: 769px;
+    }
+  }
+
+  &#why {
+    .section-title {
+      max-width: 418px;
+      margin-inline: auto;
+      line-height: 1;
+    }
+  }
+
+  &#process {
+    .section-title {
+      max-width: 630px;
+      margin-inline: auto;
+      line-height: 1;
+    }
+  }
+
   &__img {
-    margin-bottom: 60px;
-    max-width: 190px;
+    margin-bottom: 40px;
+    max-width: 300px;
     margin-inline: auto;
+
+    svg, path {
+      fill: var(--color-black);
+      stroke: var(--color-black);
+    }
 
     img {
       max-width: 100%;
+      width: 100%;
     }
     &:empty {
       display: none;
@@ -51,3 +81,5 @@
     display: none;
   }
 }
+
+

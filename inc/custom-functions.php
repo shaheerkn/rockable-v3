@@ -90,7 +90,7 @@ function theme_the_field($name = false, $before = '', $after = '', $sub_field = 
  * @param  boolean $echo         Whether to print the image or return URL, default = false
  * @return Mixed                 Print <img> if $echo = true or return URL
  */
-function theme_get_attachment($attachment_id = 0, $size = 'thumbnail', $classes = '', $echo = false)
+function theme_get_attachment($attachment_id = 0, $size = 'thumbnail', $classes = '', $echo = false, $echo_svg = false)
 {
 
   if (!$attachment_id) {
@@ -103,8 +103,11 @@ function theme_get_attachment($attachment_id = 0, $size = 'thumbnail', $classes 
 
   $alt = get_post_meta($attachment_id, '_wp_attachment_image_alt', TRUE);
 
-
-  echo '<img src="' . wp_get_attachment_image_url($attachment_id, $size) . '" data-src="' . wp_get_attachment_image_url($attachment_id, $size) . '" class="' . $classes . '" alt="' . $alt . '"/>';
+  if ( $echo_svg ) {
+    echo file_get_contents( wp_get_attachment_image_url($attachment_id, $size) );
+  } else {
+    echo '<img src="' . wp_get_attachment_image_url($attachment_id, $size) . '" data-src="' . wp_get_attachment_image_url($attachment_id, $size) . '" class="' . $classes . '" alt="' . $alt . '"/>';
+  }
 }
 
 /**

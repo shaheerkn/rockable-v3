@@ -3,8 +3,8 @@
 
   .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 54px 52px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 77px 52px;
     margin-top: 130px;
 
     @media (max-width: 1250px) {
@@ -18,13 +18,14 @@
   }
 
   &__card {
-    background-color: #272727;
-    color: var(--primary-color);
+    color: var(--color-black);
     position: relative;
-    padding: 80px 61px 88px;
     text-align: center;
     border-radius: 8px;
     transition: color 1s;
+    max-width: 335px;
+    width: 100%;
+    margin-inline: auto;
 
     @media (max-width: 1520px) {
       padding-inline: 25px;
@@ -33,9 +34,6 @@
     &::before {
       counter-increment: section;
       content: counter(section);
-      position: absolute;
-      top: 25px;
-      left: 20px;
       font-size: 20px;
       font-weight: 300;
     }
@@ -68,10 +66,33 @@
         font-size: 20px;
       }
     }
+
+    &-title {
+      font-size: 50px;
+    }
+  }
+
+  &__card:nth-child(3),
+  &__card:nth-child(6) {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
   &.cards--simple-borders {
+    .container {
+      grid-template-columns: 1fr;
+      row-gap: 118px;
+    }
+    
+   .cards__card:nth-child(3),
+    .cards__card:nth-child(6) {
+      grid-column-start: auto;
+      grid-column-end: auto;
+    }
+
     .cards__card {
+      padding-block: 0;
+    
       &::before {
         display: none;
       }

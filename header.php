@@ -31,10 +31,12 @@
 	body {
 		--primary-color: <?php echo $primaryColor; ?>;
 		--secondary-color: <?php echo $secondaryColor; ?>;
+		--color-black: var(--secondary-color);
 	}
 
 	body.active {
 		--primary-color: var(--secondary-color);
+		--color-black: <?php echo $primaryColor; ?>;
 	}
 </style>
 
@@ -54,12 +56,4 @@
 				<img src="<?php echo $toLightMode ?>" class="to-light-mode" />
 			<?php	endif; ?>
 		</button>
-
-		<div class="section-nav">
-			<a href="#hero" class="active"></a>
-			<a href="#designed"></a>
-			<a href="#why"></a>
-			<a href="#process"></a>
-			<a href="#how"></a>
-		</div>
 	</header>

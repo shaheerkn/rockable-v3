@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+  font-family: 'arial';
+  src: url('/assets/arial-black.ttf');
+}
 
 * {
   box-sizing: border-box;
@@ -7,11 +12,11 @@
 }
 
 body {
-  --color-black: #272727;
+  // --color-black: #272727;
   background-color: var(--primary-color);
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
-  color: var(--color-black);
+  // color: var(--color-black);
   transition: 1s;
 }
 
@@ -51,7 +56,7 @@ body.active .to-light-mode {
 .container {
   width: 100%;
   padding-inline: 25px;
-  max-width: calc(1641px + 50px);
+  max-width: calc(1468px + 50px);
   margin-inline: auto;
 }
 
@@ -72,16 +77,14 @@ body.active .to-light-mode {
 }
 
 .h1 {
-  font-size: 86px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 240px;
   font-weight: bold;
-  line-height: 1.19;
+  line-height: 1;
+  transition: color 0.2s;
 
   @media (max-width: 1120px) {
-    font-size: 46px;
-  }
-
-  @media (max-width: 1024px) {
-    font-size: 40px;
+    font-size: 120px;
   }
 }
 
@@ -104,11 +107,20 @@ body.active .to-light-mode {
 }
 
 .section-title {
-  font-size: 50px;
+  font-size: 120px;
   font-weight: 600;
+  font-family: 'Bebas Neue', sans-serif;
+  color: var(--color-black);
+  transition: color 1s;
 
   @media (max-width: 1024px) {
-    font-size: 30px;
+    font-size: 90px;
+  }
+
+  em {
+    font-style: normal;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
   }
 }
 
@@ -186,36 +198,16 @@ body.active .to-light-mode {
 
 .contact-form {
   width: calc(100% - 40px);
-  max-width: 985px;
+  max-width: 1020px;
   margin-inline: auto;
   z-index: 4;
   position: relative;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding-block: 20px;
 
   @media (max-width: 1024px) {
     padding: 78px 32px 34px;
     padding-inline: 0;
-  }
-
-  &__container {
-    max-width: 900px;
-    width: 100%;
-    margin-inline: auto;
-    overflow: auto;
-    overflow-x: hidden;
-    height: auto;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-
-    @media (max-height: 750px) {
-      height: 100%;
-    }
   }
 
   &__p {
@@ -251,33 +243,34 @@ body.active .to-light-mode {
   }
 
   .input {
-    border: 1px solid #272727 !important;
-    background-color: transparent !important;
-    color: var(--color-black) !important;
-    font-size: 20px !important;
-    font-weight: 500 !important;
-    border-radius: 10px !important;
+    border: none;
+    border-bottom: 1px solid var(--color-black);
+    background-color: transparent;
+    color: var(--color-black);
+    font-size: 36px !important;
+    font-weight: 300 !important;
+    padding: 0 !important;
+     font-family: 'Lato', sans-serif;
 
     &::placeholder {
       color: var(--color-black);
+      font-weight: 300 !important;
     }
 
     &:focus-visible {
-      outline: none !important;
+      outline: none;
     }
 
     @media (max-width: 768px) {
-      font-size: 18px !important;
+      font-size: 18px;
     }
   }
 
   input,
   select {
     @extend .input;
-    opacity: 1 !important;
-    text-align: center !important;
-    text-align-last: center !important;
-    height: 60px !important;
+    opacity: 1;
+    height: 60px;
     -webkit-appearance: none;
     appearance: none;
   }
@@ -289,7 +282,6 @@ body.active .to-light-mode {
   }
 
   .gfield.gfield--width-half {
-    // max-width: 357px !important;
     width: 100% !important;
     padding-right: 0 !important;
 
@@ -300,27 +292,31 @@ body.active .to-light-mode {
 
   .gform_wrapper .gform_fields {
     grid-column-gap: 6% !important;
-    grid-row-gap: 30px !important;
+    grid-row-gap: 140px !important;
 
     @media (max-width: 768px) {
-      grid-row-gap: 10px !important;
+      grid-row-gap: 10px ;
     }
   }
 
   #gform_submit_button_1 {
     max-width: 357px !important;
-    width: 100% !important;
-    background-color: var(--color-black) !important;
-    color: var(--primary-color) !important;
-    font-size: 20px !important;
+    width: auto !important;
+    background-color: transparent !important;
+    color: var(--color-black) !important;
+    border: 1px solid var(--color-black);
+    font-size: 36px !important;
     text-align: center;
     box-shadow: none !important;
-    padding-block: 18px !important;
+    padding: 20px 43px !important;
     line-height: normal;
     margin-inline: auto;
     cursor: pointer;
     transition: color 1s;
-    
+    border-radius: 8px;
+    height: auto;
+    margin-top: 145px;
+
     @media (max-width: 768px) {
       max-width: 100% !important;
     }
@@ -328,15 +324,9 @@ body.active .to-light-mode {
 
   .textarea {
     @extend .input;
-    padding: 27px !important;
-    height: 117px !important;
+      height: 60px !important;
     font-family: inherit !important;
     min-block-size: auto !important;
-    
-    @media (max-width: 768px) {
-      text-align: center !important;
-      padding: 18px !important;
-    }
   }
 
   &.thankyou {
@@ -387,68 +377,5 @@ body.active .to-light-mode {
   .h1 {
     text-align: center;
     margin-bottom: 30px;
-  }
-}
-
-.section-nav {
-  position: fixed;
-  top: 100px;
-  right: 42px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px 20px;
-  z-index: 20;
-
-  a {
-    display: block;
-    width: 15px;
-    height: 15px;
-    border: 2px solid #272727;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 1s, scale 0.3s;
-
-     @media (max-width: 1100px) {  
-      transition: none;
-      }
-
-    &.active {
-      background-color: #272727;
-
-      @media (max-width: 1100px) { 
-        order: -1;
-        }
-    }
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-
-  @media (max-width: 1100px) {
-    right: auto;
-    left: 20px;
-    top: 17px;
-    padding: 15px 8px;
-    border-radius: 15px;
-    max-height: 20px;
-    overflow: hidden;
-    transition: all 0.3s; 
-
-
-    a {
-      flex-shrink: 0;
-      pointer-events: none;
-    }
-
-    &.active {
-      background-color: var(--primary-color);
-      box-shadow: 0 0 5px #4f484880;
-      max-height: 240px;
-
-      a {
-        pointer-events: all;
-      }
-    }
   }
 }

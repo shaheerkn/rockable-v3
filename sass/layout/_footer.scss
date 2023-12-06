@@ -1,4 +1,6 @@
 .site-footer {
+  color: var(--color-black);
+  transition: color 1s;
   padding-block: 270px 25px;
 
   @media (max-width: 768px) {

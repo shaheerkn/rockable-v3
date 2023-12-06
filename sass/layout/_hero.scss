@@ -1,9 +1,10 @@
 .hero {
-  padding-block: 115px 0;
+  padding-block: 57px 0;
   color: var(--color-black);
+  transition: color 1s;
 
   @media (max-width: 1440px) {
-   padding-block: 93px 0;
+   padding-block: 53px 0;
   }
 
   .tagline {
@@ -15,22 +16,23 @@
     width: 100%;
     max-width: 844px;
     margin-inline: auto;
-    margin-top: 33px;
+    margin-top: -20px;
+    font-size: 60px;
+
+    @media (max-width: 1120px) {
+      font-size: 40px;
+    }
   }
 
   .site-brand {
-    margin-bottom: 190px;
+    margin-bottom: 102px;
 
     img {
       max-width: 100%;
     }
 
-    @media (max-width: 1440px) {
-      margin-bottom: 100px;
-    }
-
     @media (max-width: 1024px) {
-      margin-bottom: 73px;
+      margin-bottom: 46px;
     }
   }
 
