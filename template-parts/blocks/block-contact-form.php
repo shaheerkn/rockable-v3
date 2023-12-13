@@ -10,7 +10,7 @@ if (get_sub_field('section_classes')) {
     <div class="contact-form">
       <div class="contact-form__btns">
         <a href="tel:(612) 845-0467">(612) 845-0467</a>
-        <a href="mailto:talktome@rockabledesign.com">talktome@rockabledesign.com</a>
+        <a href="mailto:talktome@rockabledesign.com" id="contact">talktome@rockabledesign.com</a>
       </div>
         <?php
           echo do_shortcode( get_sub_field( 'shortcode' ) );

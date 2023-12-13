@@ -13,7 +13,7 @@ if (get_sub_field('enable_button') == 'Yes'){
       <div class="text__img" data-aos="fade-up" data-aos-duration="1000">
         <?php
           if (get_sub_field('enable_image') == 'Yes'){
-            theme_get_attachment( get_sub_field('image'), 'full', '', true, true );
+            theme_get_attachment( get_sub_field('image'), 'full', '', true );
           }
         ?>
       </div>

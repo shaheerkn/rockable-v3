@@ -1,10 +1,10 @@
 .site-footer {
   color: var(--color-black);
   transition: color 1s;
-  padding-block: 270px 25px;
+  padding-block: 78px 25px;
 
   @media (max-width: 768px) {
-    padding-top: 115px;
+    padding-block: 115px 227px;
   }
 
   .container {
@@ -16,6 +16,33 @@
 
     p {
       font-size: 18px;
+    }
+  }
+
+  .btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 212px;
+    flex-wrap: wrap;
+  }
+
+  .outline-btn {
+    display: inline-block;
+    border: 1px solid #707070;
+    border-radius: 6px;
+    font-size: 26px;
+    color: #fff;
+    text-decoration: none;
+    max-width: 532px;
+    width: 100%;
+    padding-block: 65px;
+    text-align: center;
+    font-weight: 300;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #FFFFFF;
+      color: #000;
     }
   }
 }

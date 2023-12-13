@@ -12,9 +12,13 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+		<div class="container btn-wrapper">
+			<a href="#" class="outline-btn">TALKTOME@ROCKABLEDESIGN.COM</a>
+			<a href="#" class="outline-btn">CONTACT FORM</a>
+		</div>
 		<div class="container tcenter">
-				<a href="#" class="brand" data-aos="fade-up">
-           <img src="<?php echo get_template_directory_uri()?>/assets/brand-black.svg" />
+				<a href="#" class="h2 brand">
+           ROCKABLE
         </a>
 				<p>
 					LOGO DESIGN AWESOMENESS SINCE 2003.

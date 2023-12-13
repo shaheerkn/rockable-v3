@@ -21,22 +21,22 @@
 </head>
 
 <?php
-  $primaryColor = get_field( 'primary_color', 'options');
-  $secondaryColor = get_field( 'secondary_color', 'options');
-  $toDarkMode = get_field( 'to_dark_mode', 'options');
-  $toLightMode = get_field( 'to_light_mode', 'options');
+  // $primaryColor = get_field( 'primary_color', 'options');
+  // $secondaryColor = get_field( 'secondary_color', 'options');
+  // $toDarkMode = get_field( 'to_dark_mode', 'options');
+  // $toLightMode = get_field( 'to_light_mode', 'options');
+  $bg = get_field( 'background_image', 'options');
 ?>
 
 <style>
 	body {
-		--primary-color: <?php echo $primaryColor; ?>;
-		--secondary-color: <?php echo $secondaryColor; ?>;
+		--primary-color: #1D1D1D;
+		--secondary-color: #FFFFFF;
 		--color-black: var(--secondary-color);
-	}
 
-	body.active {
-		--primary-color: var(--secondary-color);
-		--color-black: <?php echo $primaryColor; ?>;
+		background-image: url(<?php echo $bg; ?>);
+		background-size: cover;
+		background-attachment: fixed;
 	}
 </style>
 
@@ -47,13 +47,20 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'rockable' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<button class="switch-theme" aria-label="Change website theme">
-			<?php if ( $toDarkMode ) : ?>
-				<img src="<?php echo $toDarkMode ?>" class="to-dark-mode" />
-			<?php	endif; ?>
+		<div class="site-header__container">
+			<a href="/" class="h2 brand">ROCKABLE</a>
 
-			<?php if ( $toLightMode ) : ?>
-				<img src="<?php echo $toLightMode ?>" class="to-light-mode" />
-			<?php	endif; ?>
-		</button>
+			<div class="sub-nav">
+				<a href="#" class="btn">CONTACT OUR TEAM</a>
+				<ul>
+					<li><a href="#" class="btn">PORTFOLIO</a></li>
+					<li><a href="#" class="btn">ABOUT</a></li>
+					<li><a href="#" class="btn">PROCESS</a></li>
+				</ul>
+				<button class="hamburger-menu">
+					<span class="plus"></span>
+					<span class="minus"></span>
+				</button>
+			</div>
+		</div>
 	</header>
