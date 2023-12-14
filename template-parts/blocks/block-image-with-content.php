@@ -10,7 +10,7 @@ if (get_sub_field('enable_button') == 'Yes'){
 <section <?php theme_section_id(); ?> class="<?php echo $classes; ?> text tcenter text--with-btn">
   <div class="container">
     <?php if (get_sub_field('enable_image') == 'Yes'){ ?>
-      <div class="text__img" data-aos="fade-up" data-aos-duration="1000">
+      <div class="text__img">
         <?php
           if (get_sub_field('enable_image') == 'Yes'){
             theme_get_attachment( get_sub_field('image'), 'full', '', true );
