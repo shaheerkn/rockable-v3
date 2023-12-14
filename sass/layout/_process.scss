@@ -1,0 +1,31 @@
+.process {
+  margin-top: 103px;
+
+  &__title {
+    font-weight: 400;
+    font-size: 70px;
+    padding-block: 43px;
+    font-family: 'Bebas Neue', sans-serif;
+    // border: 2px solid red;
+
+    &.active {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+
+  &__p {
+    font-size: 26px;
+    margin-top: 60px;
+    color: #fff;
+    font-weight: 300;
+  }
+}
+
+.hero + .process {
+  margin-top: 160px;
+}
+
+.process + .text {
+  margin-top: 194px;
+}

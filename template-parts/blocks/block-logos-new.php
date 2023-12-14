@@ -5,7 +5,6 @@ if (get_sub_field('section_classes')) {
 }
 ?>
 <section <?php theme_section_id(); ?> class="<?php echo $classes; ?> logos">
-
   <?php
     while (have_rows( 'logos' ) ) : the_row(); ?>
       <div class="container">

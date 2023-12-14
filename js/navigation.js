@@ -121,8 +121,23 @@ function animations() {
       });
     });
   });
+
+   const processBtn = document.querySelectorAll('.process__title');
+
+   processBtn.forEach((btn) => {
+      gsap.from(btn, {
+        scrollTrigger: {
+          trigger: btn,
+          scrub: 1,
+          start: "top center",
+          end: "bottom 330px",
+          toggleClass: "active"
+        },
+      });
+   })
 }
 
 
 animations();
 window.addEventListener('resize',  animations)
+

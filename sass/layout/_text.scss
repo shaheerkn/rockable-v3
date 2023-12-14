@@ -131,3 +131,30 @@
 }
 
 
+
+
+.about-text {
+  .section-title {
+    font-size: 70px;
+  }
+
+  .content {
+    margin-top: 50px;
+  }
+
+  &--small .content{
+    max-width: 940px;
+  }
+}
+
+.hero + .about-text {
+  margin-top: 160px;
+}
+
+.about-text + .about-text {
+  margin-top: 127px;
+}
+
+.about-text + #how {
+  margin-top: 200px;
+}

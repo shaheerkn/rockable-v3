@@ -54,8 +54,8 @@
 				<a href="#" class="btn">CONTACT OUR TEAM</a>
 				<ul>
 					<li><a href="#" class="btn">PORTFOLIO</a></li>
-					<li><a href="#" class="btn">ABOUT</a></li>
-					<li><a href="#" class="btn">PROCESS</a></li>
+					<li><a href="/about" class="btn">ABOUT</a></li>
+					<li><a href="/process" class="btn">PROCESS</a></li>
 				</ul>
 				<button class="hamburger-menu">
 					<span class="plus"></span>

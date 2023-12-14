@@ -448,6 +448,26 @@ html {
 	margin-bottom: 30px;
 }
 
+.outline-btn {
+	display: inline-block;
+	border: 1px solid #707070;
+	border-radius: 6px;
+	font-size: 26px;
+	color: #fff;
+	text-decoration: none;
+	max-width: 532px;
+	width: 100%;
+	padding-block: 65px;
+	text-align: center;
+	font-weight: 300;
+	transition: 0.3s;
+}
+
+.outline-btn:hover {
+	background-color: #FFFFFF;
+	color: #000;
+}
+
 [data-aos][data-aos][data-aos-duration="50"], body[data-aos-duration="50"] [data-aos] {
 	transition-duration: 50ms;
 }
@@ -1495,6 +1515,10 @@ html {
 	}
 }
 
+.about-hero h1 + p {
+	max-width: 905px;
+}
+
 .logos {
 	color: var(--color-black);
 	padding-block: 140px 170px;
@@ -1626,6 +1650,30 @@ html {
 	display: none;
 }
 
+.about-text .section-title {
+	font-size: 70px;
+}
+
+.about-text .content {
+	margin-top: 50px;
+}
+
+.about-text--small .content {
+	max-width: 940px;
+}
+
+.hero + .about-text {
+	margin-top: 160px;
+}
+
+.about-text + .about-text {
+	margin-top: 127px;
+}
+
+.about-text + #how {
+	margin-top: 200px;
+}
+
 .cards {
 	counter-reset: section;
 }
@@ -1748,6 +1796,37 @@ html {
 	}
 }
 
+.process {
+	margin-top: 103px;
+}
+
+.process__title {
+	font-weight: 400;
+	font-size: 70px;
+	padding-block: 43px;
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+.process__title.active {
+	background-color: #fff;
+	color: #000;
+}
+
+.process__p {
+	font-size: 26px;
+	margin-top: 60px;
+	color: #fff;
+	font-weight: 300;
+}
+
+.hero + .process {
+	margin-top: 160px;
+}
+
+.process + .text {
+	margin-top: 194px;
+}
+
 .site-footer {
 	color: var(--color-black);
 	transition: color 1s;
@@ -1777,26 +1856,6 @@ html {
 	flex-direction: row;
 	margin-bottom: 212px;
 	flex-wrap: wrap;
-}
-
-.site-footer .outline-btn {
-	display: inline-block;
-	border: 1px solid #707070;
-	border-radius: 6px;
-	font-size: 26px;
-	color: #fff;
-	text-decoration: none;
-	max-width: 532px;
-	width: 100%;
-	padding-block: 65px;
-	text-align: center;
-	font-weight: 300;
-	transition: 0.3s;
-}
-
-.site-footer .outline-btn:hover {
-	background-color: #FFFFFF;
-	color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */

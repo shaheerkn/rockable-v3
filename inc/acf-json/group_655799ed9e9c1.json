@@ -1178,6 +1178,56 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_657b78f56f197": {
+                    "key": "layout_657b78f56f197",
+                    "name": "process_step",
+                    "label": "Process Step",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_657b7aa36f199",
+                            "label": "Process Title",
+                            "name": "process_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_657b7aed0541d",
+                            "label": "Process Description",
+                            "name": "process_description",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -1206,5 +1256,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1701814001
+    "modified": 1702591990
 }

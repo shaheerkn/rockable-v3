@@ -25,24 +25,4 @@
     margin-bottom: 212px;
     flex-wrap: wrap;
   }
-
-  .outline-btn {
-    display: inline-block;
-    border: 1px solid #707070;
-    border-radius: 6px;
-    font-size: 26px;
-    color: #fff;
-    text-decoration: none;
-    max-width: 532px;
-    width: 100%;
-    padding-block: 65px;
-    text-align: center;
-    font-weight: 300;
-    transition: 0.3s;
-
-    &:hover {
-      background-color: #FFFFFF;
-      color: #000;
-    }
-  }
 }

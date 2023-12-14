@@ -64,3 +64,10 @@
     }
   }
 }
+
+
+.about-hero {
+   h1 + p {
+    max-width: 905px;
+   }
+}
