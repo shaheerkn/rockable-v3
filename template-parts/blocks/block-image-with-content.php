@@ -19,7 +19,7 @@ if (get_sub_field('enable_button') == 'Yes'){
       </div>
     <?php }  ?>
     <?php
-      theme_the_field( 'title', '<h2 class="section-title">', '</h2>', true );
+      theme_the_field( 'title', '<h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">', '</h2>', true );
       theme_the_field( 'subtitle', '<p class="section-description">', '</p>', true );
     ?>
     <?php if ( get_sub_field( 'content' )): ?>

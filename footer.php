@@ -12,8 +12,8 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="container btn-wrapper">
-			<a href="https://rockabledesign.com/v3/contact/" class="outline-btn">TALKTOME@ROCKABLEDESIGN.COM</a>
+		<div class="container btn-wrapper" data-aos="fade-up" data-aos-duration="1000">
+			<a href="https://rockabledesign.com/v3/contact/" class="outline-btn" >TALKTOME@ROCKABLEDESIGN.COM</a>
 			<a href="https://rockabledesign.com/v3/contact/" class="outline-btn">CONTACT FORM</a>
 		</div>
 		<div class="container tcenter">
