@@ -216,7 +216,7 @@ html {
 
 .contact-form {
   width: 100%;
-  max-width: 1020px;
+  max-width: 1135px;
   margin-inline: auto;
   z-index: 4;
   position: relative;
@@ -261,17 +261,20 @@ html {
   }
 
   .input {
+    color: #fff;
     border: none;
-    border-bottom: 1px solid var(--color-black);
+    border: 1px solid #707070;
+    height: 162px;
+    border-radius: 6px;
+
+    text-align: center;
     background-color: transparent;
-    color: var(--color-black);
     font-size: 36px !important;
     font-weight: 300 !important;
-    padding: 0 !important;
-     font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 
     &::placeholder {
-      color: var(--color-black);
+      color: #fff;
       font-weight: 300 !important;
     }
 
@@ -288,7 +291,6 @@ html {
   select {
     @extend .input;
     opacity: 1;
-    height: 60px;
     -webkit-appearance: none;
     appearance: none;
   }
@@ -309,8 +311,8 @@ html {
   }
 
   .gform_wrapper .gform_fields {
-    grid-column-gap: 6% !important;
-    grid-row-gap: 140px !important;
+    grid-column-gap: 4% !important;
+    grid-row-gap: 54px !important;
 
     @media (max-width: 768px) {
       grid-row-gap: 46px !important;
@@ -318,22 +320,19 @@ html {
   }
 
   #gform_submit_button_1 {
-    max-width: 357px !important;
-    width: auto !important;
+    @extend .outline-btn;
     background-color: transparent !important;
     color: var(--color-black) !important;
     border: 1px solid var(--color-black);
     font-size: 36px !important;
     text-align: center;
     box-shadow: none !important;
-    padding: 20px 43px !important;
     line-height: normal;
     margin-inline: auto;
-    cursor: pointer;
     transition: color 0.3s, background-color 0.3s;
     border-radius: 8px;
     height: auto;
-    margin-top: 145px;
+    margin-top: 47px;
 
     @media (max-width: 768px) {
       max-width: 100% !important;
@@ -348,9 +347,10 @@ html {
 
   .textarea {
     @extend .input;
-      height: 60px !important;
     font-family: inherit !important;
     min-block-size: auto !important;
+    text-align: left;
+    padding: 30px 35px !important;
   }
 
   &.thankyou {
@@ -423,4 +423,8 @@ html {
       background-color: #FFFFFF;
       color: #000;
     }
+  }
+
+  .gform_title {
+    display: none;
   }
