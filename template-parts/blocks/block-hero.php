@@ -12,7 +12,7 @@
         theme_the_field( 'title', '<a href="/" class="h2 brand">', '</a>', true );
       ?>
     </div>
-    <div class="hero__content">
+    <div class="hero__content" data-aos="zoom-out" data-aos-duration="1000">
       <?php
         theme_the_field( 'title_two', '<h1 class="h1">', '</h1>', true );
         theme_the_field( 'content', '<p class="p">', '</p>', true );
