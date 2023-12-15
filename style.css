@@ -470,6 +470,14 @@ html {
 	display: none;
 }
 
+.contact-form-section + .text {
+	margin-top: 242px;
+}
+
+.contact-form-section ~ .site-footer .btn-wrapper {
+	display: none;
+}
+
 [data-aos][data-aos][data-aos-duration="50"], body[data-aos-duration="50"] [data-aos] {
 	transition-duration: 50ms;
 }

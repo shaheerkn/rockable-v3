@@ -428,3 +428,13 @@ html {
   .gform_title {
     display: none;
   }
+
+  .contact-form-section + .text {
+    margin-top: 242px;
+  }
+
+  .contact-form-section ~ .site-footer {
+    .btn-wrapper {
+      display: none;
+    }
+  }
