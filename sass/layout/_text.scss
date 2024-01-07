@@ -57,6 +57,11 @@
 
   &#why {
     @media (max-width: 768px) { 
+      .section-title {
+          max-width: 213px;
+          margin-inline: auto;
+      }
+
       .section-description {
         max-width: 284px;
         margin-inline: auto;

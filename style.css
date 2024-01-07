@@ -1746,6 +1746,10 @@ html {
 }
 
 @media (max-width: 768px) {
+	.text#why .section-title {
+		max-width: 213px;
+		margin-inline: auto;
+	}
 	.text#why .section-description {
 		max-width: 284px;
 		margin-inline: auto;
