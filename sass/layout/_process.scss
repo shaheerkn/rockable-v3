@@ -1,24 +1,39 @@
 .process {
   margin-top: 103px;
 
+  @media (max-width: 768px) {
+    margin-top: 79px;
+  }
+
   &__title {
     font-weight: 400;
     font-size: 70px;
     padding-block: 43px;
     font-family: 'Bebas Neue', sans-serif;
-    // border: 2px solid red;
 
     &.active {
-      background-color: #fff;
-      color: #000;
+      background-color: #FFFFFF;
+      color: #000000;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 61px;
+      padding-block: 38px;
     }
   }
 
   &__p {
     font-size: 26px;
     margin-top: 60px;
-    color: #fff;
+    color: #FFFFFF;
     font-weight: 300;
+
+     @media (max-width: 768px) {
+      margin-top: 25px;
+      font-size: 24px;
+      max-width: 321px;
+      margin-inline: auto;
+    }
   }
 }
 

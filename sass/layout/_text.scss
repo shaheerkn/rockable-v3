@@ -5,6 +5,10 @@
     margin-block: 8px 90px;
   }
 
+  @media (max-width: 768px) {
+    padding-bottom: 18px;
+  }
+
   .p + .p,
   p + p {
     margin-top: 35px;
@@ -26,18 +30,14 @@
     }
   }
 
-  // &#designed {
-  //   .content {
-  //     max-width: 769px;
-  //   }
-  //    @media (max-width: 768px) { 
-  //     .section-description {
-  //       font-size: 36px;
-  //       max-width: 280px;
-  //       margin: 10px auto 31px;
-  //     }
-  //   }
-  // }
+  &#designed {
+     @media (max-width: 768px) { 
+      .section-description {
+        max-width: 230px;
+        margin: 22px auto 40px;
+      }
+    }
+  }
 
   &#how {
     .section-title {
@@ -48,53 +48,21 @@
 
     @media (max-width: 768px) { 
       .section-description {
-        font-size: 36px;
-        max-width: 280px;
+        font-size: 26px;
+        max-width: 316px;
         margin: 50px auto 35px;
       }
     }
   }
 
-  // &#process {
-  //   .section-title {
-  //     max-width: 630px;
-  //     margin-inline: auto;
-  //     line-height: 1;
-  //   }
-
-  //   @media (max-width: 768px) {
-  //     .section-title {
-  //       max-width: 260px;
-  //       margin-inline: auto;
-  //     }
-
-  //     .section-description {
-  //       font-size: 36px;
-  //       max-width: 310px;
-  //       margin: 17px auto 0;
-  //     }
-  //   }
-  // }
-
-  // &#how {
-  //   @media (max-width: 768px) {
-  //     .section-title {
-  //       font-size: 60px;
-  //       max-width: 200px;
-  //       margin-inline: auto;
-  //     }
-
-  //     .section-description {
-  //       font-size: 36px;
-  //       max-width: 320px;
-  //       margin: 50px auto 0;
-  //     }
-
-  //     .content {
-  //       margin-top: 35px;
-  //     }
-  //   }
-  // }
+  &#why {
+    @media (max-width: 768px) { 
+      .section-description {
+        max-width: 284px;
+        margin-inline: auto;
+      }
+    }
+  }
 
   &__img {
     margin-bottom: 40px;
@@ -133,19 +101,42 @@
 .about-text {
   .section-title {
     font-size: 70px;
+
+    @media (max-width: 768px) {
+      margin-top: 60px;
+      line-height: 65px;
+      max-width: 290px;
+      margin-inline: auto;
+      text-align: center;
+      font-size: 60px;
+    }
   }
 
   .content {
     margin-top: 50px;
+
+    @media (max-width: 768px) {
+      margin-top: 46px;
+    }
   }
 
-  &--small .content{
+  &--small .content {
     max-width: 940px;
+  }
+
+  &--small .section-title {
+    @media (max-width: 768px) {
+      max-width: 305px;
+    }
   }
 }
 
 .hero + .about-text {
   margin-top: 160px;
+
+  @media (max-width: 768px) {
+    margin-top: 97px;
+  }
 }
 
 .about-text + .about-text {
@@ -154,6 +145,10 @@
 
 .about-text + #how {
   margin-top: 200px;
+
+  @media (max-width: 768px) {
+    margin-top: 137px;
+  }
 }
 
 .only-text {

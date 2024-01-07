@@ -29,6 +29,10 @@ body {
   line-height: 1;
   display: block;
   transition: color 1s;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 html {
@@ -41,6 +45,10 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+      padding: 20px 20px 0;
+    }
   }
 
   .btn {
@@ -49,6 +57,11 @@ html {
     box-shadow: none;
     margin-right: 35px;
     font-weight: bold;
+
+    @media (max-width: 768px) {
+      font-size: 10px;
+      margin-right: 17px;
+    }
   }
 
   .sub-nav {
@@ -58,6 +71,12 @@ html {
     top: 42px;
     right: 52px;
     z-index: 100;
+
+    @media (max-width: 768px) {
+      right: 20px;
+      top: 18px;
+      position: absolute;
+    }
     
     ul {
       max-width: 0;
@@ -102,6 +121,16 @@ html {
       transform: translateY(-50%);
     }
 
+     @media (max-width: 768px) {
+      .plus {
+        height: 11px;
+      }
+
+      .minus {
+        width: 11px;
+      }
+    }
+
     &.active {
       .plus {
         opacity: 0;
@@ -129,8 +158,21 @@ html {
   transition: color 0.5s;
 
   @media (max-width: 1120px) {
-    font-size: 120px;
+    font-size: 140px;
+    line-height: 112px;
   }
+}
+
+.process-hero h1,
+.about-hero h1 {
+   @media (max-width: 1120px) {
+    font-size: 120px;
+
+    & + p {
+      max-width: 299px !important;
+    }
+  }
+
 }
 
 .p {
@@ -159,7 +201,8 @@ html {
   transition: color 1s;
 
   @media (max-width: 1024px) {
-    font-size: 90px;
+    font-size: 120px;
+    line-height: 101px;
   }
 
   em {
@@ -174,7 +217,7 @@ html {
   color: #848383;
 
   @media (max-width: 1024px) {
-    font-size: 20px;
+    font-size: 28px;
   }
 }
 
@@ -284,6 +327,9 @@ html {
 
     @media (max-width: 768px) {
       font-size: 28px !important;
+      height: 104px;
+      text-align: left;
+      padding-inline: 35px !important;
     }
   }
 
@@ -297,8 +343,13 @@ html {
 
   select {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    @media (min-width: 768px) {
+      align-items: center;
+      text-align-last: center;
+      justify-content: center;
+      
+    }
   }
 
   .gfield.gfield--width-half {
@@ -315,7 +366,7 @@ html {
     grid-row-gap: 54px !important;
 
     @media (max-width: 768px) {
-      grid-row-gap: 46px !important;
+      grid-row-gap: 27px !important;
     }
   }
 
@@ -336,7 +387,9 @@ html {
 
     @media (max-width: 768px) {
       max-width: 100% !important;
-      margin-top: 54px !important;
+      margin-top: 29px !important;
+      padding-block: 33px !important;
+      text-align: left !important;
     }
 
     &:hover {
@@ -351,6 +404,10 @@ html {
     min-block-size: auto !important;
     text-align: left;
     padding: 30px 35px !important;
+
+    @media (max-width: 768px) {
+      height: 523px !important;
+    }
   }
 
   &.thankyou {
@@ -423,6 +480,11 @@ html {
       background-color: #FFFFFF;
       color: #000;
     }
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      padding-block: 42px;
+    }
   }
 
   .gform_title {
@@ -431,10 +493,20 @@ html {
 
   .contact-form-section + .text {
     margin-top: 242px;
+
+    @media (max-width: 768px) {
+      margin-top: 112px;
+    }
   }
 
   .contact-form-section ~ .site-footer {
     .btn-wrapper {
       display: none;
+    }
+  }
+
+  #how .container {
+    @media (max-width: 768px) {
+      padding-inline: 0;
     }
   }

@@ -6,16 +6,23 @@
     padding-block: 60px 128px;
   }
 
+  @media (max-width: 1024px) {
+    padding-block: 89px 107px;
+  }
+
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 81px;
 
-
     @media (max-width: 1024px) {
       grid-template-columns: 1fr;
       row-gap: 32px;
       max-width: 415px;
+    }
+
+    @media (max-width: 768px) {
+      gap: 20px;
     }
   }
 

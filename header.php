@@ -53,7 +53,7 @@
 			<div class="sub-nav">
 				<a href="https://rockabledesign.com/v3/contact/" class="btn">CONTACT OUR TEAM</a>
 				<ul>
-					<li><a href="#" class="btn">PORTFOLIO</a></li>
+					<li><a href="https://rockabledesign.com/v3" class="btn">PORTFOLIO</a></li>
 					<li><a href="https://rockabledesign.com/v3/about/" class="btn">ABOUT</a></li>
 					<li><a href="https://rockabledesign.com/v3/process/" class="btn">PROCESS</a></li>
 				</ul>

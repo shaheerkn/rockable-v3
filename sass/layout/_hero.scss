@@ -4,7 +4,7 @@
   transition: color 1s;
 
   @media (max-width: 1440px) {
-   padding-block: 53px 0;
+    padding-block: 53px 0;
   }
 
   .tagline {
@@ -24,6 +24,11 @@
     @media (max-width: 1120px) {
       font-size: 40px;
     }
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+      margin-top: 10px;
+    }
   }
 
   .site-brand {
@@ -42,7 +47,7 @@
     margin-block: 122px 0;
 
     @media (max-width: 1024px) {
-      margin-block: 63px 0;
+      margin-block: 25px 0;
 
       h1 + p {
         margin-bottom: 0;

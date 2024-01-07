@@ -99,50 +99,51 @@ document.addEventListener( 'DOMContentLoaded', function() {
 // })
 
 function animations() {
-  if (!window.matchMedia("(min-width: 1366px)").matches) return;
-  
-  const logosSections = document.querySelectorAll('.logos');
-  logosSections.forEach((section) => {
-    const logos = section.querySelectorAll('.logos__logo');
-  
-    const animations = [
-      { transform: 'rotate(11deg) translate(-50px, -100px)' },
-      { transform: 'rotate(339deg) translateY(-60px)' },
-      { transform: 'rotate(-11deg) translate(50px, -100px)' },
-      { transform: 'rotate(347deg) translate(20px, -60px)' },
-      { transform: 'rotate(7deg) translate(-20px, -170px)' },
-      { transform: 'rotate(332deg)' },
-    ];
-  
-    logos.forEach((logo, index) => {
-      gsap.from(logo, {
-        scrollTrigger: {
-          trigger: section,
-          scrub: 1,
-          start: "-400 top",
-          end: "center center",
-        },
-        ...animations[index],
+  console.log(window.matchMedia("(min-width: 1366px)").matches)
+  if (window.matchMedia("(min-width: 1366px)").matches) {
+    const logosSections = document.querySelectorAll('.logos');
+    logosSections.forEach((section) => {
+      const logos = section.querySelectorAll('.logos__logo');
+    
+      const animations = [
+        { transform: 'rotate(11deg) translate(-50px, -100px)' },
+        { transform: 'rotate(339deg) translateY(-60px)' },
+        { transform: 'rotate(-11deg) translate(50px, -100px)' },
+        { transform: 'rotate(347deg) translate(20px, -60px)' },
+        { transform: 'rotate(7deg) translate(-20px, -170px)' },
+        { transform: 'rotate(332deg)' },
+      ];
+    
+      logos.forEach((logo, index) => {
+        gsap.from(logo, {
+          scrollTrigger: {
+            trigger: section,
+            scrub: 1,
+            start: "-400 top",
+            end: "center center",
+          },
+          ...animations[index],
+        });
       });
     });
-  });
-
-   const processBtn = document.querySelectorAll('.process__title');
-
-   processBtn.forEach((btn) => {
-      gsap.from(btn, {
-        scrollTrigger: {
-          trigger: btn,
-          scrub: 1,
-          start: "top center",
-          end: "bottom 330px",
-          toggleClass: "active"
-        },
-      });
-   })
+  
+     const processBtn = document.querySelectorAll('.process__title');
+  
+     processBtn.forEach((btn) => {
+        gsap.from(btn, {
+          scrollTrigger: {
+            trigger: btn,
+            scrub: 1,
+            start: "top center",
+            end: "bottom 330px",
+            toggleClass: "active"
+          },
+        });
+     })
+  }
 }
 
 
 animations();
-window.addEventListener('resize',  animations)
+window.addEventListener('resize', animations)
 
