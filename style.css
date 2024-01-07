@@ -303,7 +303,7 @@ html {
 
 @media (max-width: 1024px) {
 	.contact-form {
-		padding: 78px 32px 34px;
+		padding: 41px 32px 34px;
 		padding-inline: 0;
 	}
 }
@@ -339,7 +339,7 @@ html {
 
 @media (max-width: 768px) {
 	.contact-form .gform_body {
-		margin-top: 50px;
+		margin-top: 0;
 		max-width: 100%;
 	}
 }

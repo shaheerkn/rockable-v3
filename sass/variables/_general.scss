@@ -267,7 +267,7 @@ html {
   padding-block: 20px;
 
   @media (max-width: 1024px) {
-    padding: 78px 32px 34px;
+    padding: 41px 32px 34px;
     padding-inline: 0;
   }
 
@@ -298,7 +298,7 @@ html {
     margin-top: 90px;
 
     @media (max-width: 768px) {
-      margin-top: 50px;
+      margin-top: 0;
       max-width: 100%;
     }
   }
