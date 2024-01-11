@@ -18,7 +18,7 @@
 		</div>
 		<div class="container tcenter">
 				<a href="#" class="h2 brand">
-           ROCKABLE
+					 <img src="https://rockabledesign.com/v3/wp-content/uploads/2024/01/rockable-main-logo-white.svg" alt="" srcset="">
         </a>
 				<p>
 					LOGO DESIGN AWESOMENESS SINCE 2003.

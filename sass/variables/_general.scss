@@ -21,18 +21,7 @@ body {
 }
 
 .h2.brand {
-  color: var(--color-black);
-  text-decoration: none;
-  font-family: Arial;
-  font-size: 29px;
-  letter-spacing: 4px;
-  line-height: 1;
   display: block;
-  transition: color 1s;
-
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
 }
 
 html {
@@ -48,6 +37,10 @@ html {
 
     @media (max-width: 768px) {
       padding: 20px 20px 0;
+
+      .order-1-on-mobiles {
+        order: -1;
+      }
     }
   }
 
@@ -57,10 +50,43 @@ html {
     box-shadow: none;
     margin-right: 35px;
     font-weight: bold;
+    text-align: center;
+    
+    @media (max-width: 768px) {
+      width: 300px;
+      font-size: 10px;
+      margin-right: 0;
+      padding-block: 10px;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: #232620;
+        color: #fff;
+      }
+    }
+
+    &--hide-on-desktop {
+      display: none;
+
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
 
     @media (max-width: 768px) {
-      font-size: 10px;
-      margin-right: 17px;
+      &--sticky-on-mobile {
+        position: fixed;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #FFFFFF;
+        color: #000000;
+        filter: drop-shadow(2px 2px 30px black);
+        padding: 20px 40px;
+        margin-right: 0;
+        font-size: 16px;
+        white-space: nowrap;
+      }
     }
   }
 
@@ -87,6 +113,25 @@ html {
 
       &.show {
         max-width: 500px;
+      }
+
+      @media (max-width: 768px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        a {
+          font-size: 40px;
+          color: #000;
+        }
       }
     }
   }
@@ -122,18 +167,27 @@ html {
     }
 
      @media (max-width: 768px) {
-      .plus {
-        height: 11px;
-      }
-
-      .minus {
-        width: 11px;
+      .plus, .minus {
+        transition: 1s;
       }
     }
 
     &.active {
-      .plus {
-        opacity: 0;
+      @media (min-width: 768px) {
+        .plus {
+          opacity: 0;
+        }
+      }
+
+      @media (max-width: 768px) {
+        transform: rotate(45deg);
+        position: fixed;
+        top: 20px;
+        right: 20px;
+
+        .plus, .minus {
+          background-color: #000000;
+        }
       }
     }
   }
