@@ -99,9 +99,8 @@ document.addEventListener( 'DOMContentLoaded', function() {
 // })
 
 function animations() {
-  console.log(window.matchMedia("(min-width: 1366px)").matches)
+  const logosSections = document.querySelectorAll('.logos');
   if (window.matchMedia("(min-width: 1366px)").matches) {
-    const logosSections = document.querySelectorAll('.logos');
     logosSections.forEach((section) => {
       const logos = section.querySelectorAll('.logos__logo');
     
@@ -140,6 +139,14 @@ function animations() {
           },
         });
      })
+  } else {
+    logosSections.forEach((section) => {
+       const logos = section.querySelectorAll('.logos__logo');
+       logos.forEach(logo => {
+          logo.setAttribute('data-aos', 'fade-up')
+          logo.setAttribute('data-aos-duration', '1000')
+       })
+    })
   }
 }
 

@@ -43,6 +43,7 @@
 		body { 
 			background-image: url('https://rockabledesign.com/v3/wp-content/uploads/2024/01/mobile.png');
 			background-size: 100% auto;
+			background-attachment: scroll;
 		}
 	}
 </style>
