@@ -564,3 +564,32 @@ html {
       padding-inline: 0;
     }
   }
+
+.terms {
+  padding-block: 200px;
+
+  &__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  &__description  p {
+    line-height: 30px;
+  }
+
+  @media (max-width: 768px) {
+     padding-block: 100px !important; 
+  }
+}
+
+.footer_link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #848383;
+}
+
+
+.terms ~ .site-footer .btn-wrapper {
+  display: none;
+  border: 1px solid red;
+}

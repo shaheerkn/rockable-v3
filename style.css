@@ -618,6 +618,36 @@ html {
 	}
 }
 
+.terms {
+	padding-block: 200px;
+}
+
+.terms__title {
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+
+.terms__description p {
+	line-height: 30px;
+}
+
+@media (max-width: 768px) {
+	.terms {
+		padding-block: 100px !important;
+	}
+}
+
+.footer_link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #848383;
+}
+
+.terms ~ .site-footer .btn-wrapper {
+	display: none;
+	border: 1px solid red;
+}
+
 [data-aos][data-aos][data-aos-duration="50"], body[data-aos-duration="50"] [data-aos] {
 	transition-duration: 50ms;
 }

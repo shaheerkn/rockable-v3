@@ -13,8 +13,8 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="container btn-wrapper" data-aos="fade-up" data-aos-duration="1000">
-			<a href="https://rockabledesign.com/v3/contact/" class="outline-btn" >TALKTOME@ROCKABLEDESIGN.COM</a>
-			<a href="https://rockabledesign.com/v3/contact/" class="outline-btn">CONTACT FORM</a>
+			<a href="https://rockabledesign.com/v3/contact" class="outline-btn" >TALKTOME@ROCKABLEDESIGN.COM</a>
+			<a href="https://rockabledesign.com/v3/contact" class="outline-btn">CONTACT FORM</a>
 		</div>
 		<div class="container tcenter">
 				<a href="#" class="h2 brand">
@@ -24,6 +24,7 @@
 					LOGO DESIGN AWESOMENESS SINCE 2003.
 				</p>
 				<p> © ROCKABLE DESIGN</p>
+				<a href="https://rockabledesign.com/v3/privacy-policy" class="footer_link">privacy policy</a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

@@ -154,3 +154,10 @@ function animations() {
 animations();
 window.addEventListener('resize', animations)
 
+document.addEventListener("DOMContentLoaded", function() {
+  var contactButton = document.querySelector(".btn--sticky-on-mobile");
+
+  if (window.location.pathname === "/contact/" || window.location.pathname === "/contact") {
+    contactButton.style.display = "none";
+  }
+});
