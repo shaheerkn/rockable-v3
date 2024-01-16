@@ -167,9 +167,8 @@ document.addEventListener("DOMContentLoaded", function() {
   var links = document.querySelectorAll('.sub-nav a');
 
   links.forEach(function(link) {
-    console.log(currentUrl.indexOf(link.getAttribute('href')) !== -1)
-    if (currentUrl.indexOf(link.getAttribute('href')) !== -1) {
-      link.parentElement.classList.add('active');
+      if (currentUrl.endsWith(link.getAttribute('href'))) {
+          link.parentElement.classList.add('active');
       }
   });
 });

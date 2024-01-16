@@ -334,6 +334,7 @@ html {
   position: relative;
   text-align: center;
   padding-block: 20px;
+  z-index: -1;
 
   @media (max-width: 1024px) {
     padding: 41px 32px 34px;
