@@ -41,7 +41,7 @@
 
 	@media (max-width: 768px) {
 		body { 
-			background-image: url('https://rockabledesign.com/v3/wp-content/uploads/2024/01/mobile.png');
+			background-image: url('https://rockabledesign.com/wp-content/uploads/2024/01/mobile.png');
 			background-size: 100% auto;
 			background-attachment: scroll;
 		}
@@ -57,16 +57,16 @@
 	<header id="masthead" class="site-header">
 		<div class="site-header__container">
 			<a href="/" class="h2 brand">
-				<img src="https://rockabledesign.com/v3/wp-content/uploads/2024/01/rockable-main-logo-white.svg" alt="" srcset="">
+				<img src="https://rockabledesign.com/wp-content/uploads/2024/01/rockable-main-logo-white.svg" alt="" srcset="">
 			</a>
 
 			<div class="sub-nav">
-				<a href="https://rockabledesign.com/v3/contact" class="btn btn--sticky-on-mobile">CONTACT OUR TEAM</a>
+				<a href="https://rockabledesign.com/contact" class="btn btn--sticky-on-mobile">CONTACT OUR TEAM</a>
 				<ul>
-					<li class="order-2-on-mobiles"><a href="https://rockabledesign.com/v3/" class="btn">PORTFOLIO</a></li>
-					<li class="order-1-on-mobiles"><a href="https://rockabledesign.com/v3/about/" class="btn">ABOUT</a></li>
-					<li class="order-3-on-mobiles"><a href="https://rockabledesign.com/v3/process/" class="btn">PROCESS</a></li>
-					<li><a href="https://rockabledesign.com/v3/contact/" class="btn btn--hide-on-desktop">CONTACT</a></li>
+					<li class="order-2-on-mobiles"><a href="https://rockabledesign.com/" class="btn">PORTFOLIO</a></li>
+					<li class="order-1-on-mobiles"><a href="https://rockabledesign.com/about/" class="btn">ABOUT</a></li>
+					<li class="order-3-on-mobiles"><a href="https://rockabledesign.com/process/" class="btn">PROCESS</a></li>
+					<li><a href="https://rockabledesign.com/contact/" class="btn btn--hide-on-desktop">CONTACT</a></li>
 				</ul>
 				<button class="hamburger-menu">
 					<span class="plus"></span>
