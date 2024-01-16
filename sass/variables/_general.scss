@@ -29,6 +29,14 @@ html {
 }
 
 .site-header {
+  @media (max-width: 768px) {
+    position: fixed;
+    width: 100%;
+    background-color: var(--primary-color);
+    z-index: 2;
+    box-shadow: 0 0 10px black;
+  }
+
   &__container {
     padding: 42px 52px 0;
     display: flex;
@@ -36,7 +44,7 @@ html {
     align-items: center;
 
     @media (max-width: 768px) {
-      padding: 20px 20px 0;
+      padding: 20px 20px;
 
       .order-1-on-mobiles {
         order: -1;
@@ -89,6 +97,13 @@ html {
       }
     }
   }
+
+      @media (max-width: 768px) {
+      .active  .btn {
+        background-color: #232620;
+        color: #fff;
+      }
+    }
 
   .sub-nav {
     display: flex;

@@ -125,20 +125,6 @@ function animations() {
         });
       });
     });
-  
-     const processBtn = document.querySelectorAll('.process__title');
-  
-     processBtn.forEach((btn) => {
-        gsap.from(btn, {
-          scrollTrigger: {
-            trigger: btn,
-            scrub: 1,
-            start: "top center",
-            end: "bottom 330px",
-            toggleClass: "active"
-          },
-        });
-     })
   } else {
     logosSections.forEach((section) => {
        const logos = section.querySelectorAll('.logos__logo');
@@ -150,9 +136,23 @@ function animations() {
   }
 }
 
-
 animations();
-window.addEventListener('resize', animations)
+window.addEventListener('resize', animations);
+
+
+    const processBtn = document.querySelectorAll('.process__title');
+  
+    processBtn.forEach((btn) => {
+      gsap.from(btn, {
+        scrollTrigger: {
+          trigger: btn,
+          scrub: 1,
+          start: "top center",
+          end: "bottom 330px",
+          toggleClass: "active"
+        }
+      });
+    })
 
 document.addEventListener("DOMContentLoaded", function() {
   var contactButton = document.querySelector(".btn--sticky-on-mobile");
@@ -160,4 +160,16 @@ document.addEventListener("DOMContentLoaded", function() {
   if (window.location.pathname === "/contact/" || window.location.pathname === "/contact" || window.location.pathname.includes("/v3/contact/")) {
     contactButton.style.display = "none";
   }
+});
+
+ document.addEventListener("DOMContentLoaded", function() {
+  var currentUrl = window.location.href;
+  var links = document.querySelectorAll('.sub-nav a');
+
+  links.forEach(function(link) {
+    console.log(currentUrl.indexOf(link.getAttribute('href')) !== -1)
+    if (currentUrl.indexOf(link.getAttribute('href')) !== -1) {
+      link.parentElement.classList.add('active');
+      }
+  });
 });
