@@ -543,12 +543,13 @@ html {
 	line-height: 1.2;
 	font-family: 'Bebas Neue', sans-serif;
 	font-weight: 500;
+	margin-top: 20px;
 }
 
 @media (max-width: 768px) {
 	.contact-form.thankyou h2 {
-		font-size: 70px;
-		list-style: 120px;
+		font-size: 129px;
+		line-height: 120px;
 	}
 }
 
