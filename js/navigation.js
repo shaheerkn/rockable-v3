@@ -101,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var links = document.querySelectorAll('.sub-nav ul a');
 
   links.forEach(function(link) {
+    console.log(currentUrl.endsWith(link.getAttribute('href')))
       if (currentUrl.endsWith(link.getAttribute('href'))) {
           link.parentElement.classList.add('active');
       }
