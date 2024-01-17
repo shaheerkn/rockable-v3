@@ -334,7 +334,7 @@ html {
   position: relative;
   text-align: center;
   padding-block: 20px;
-  z-index: -1;
+  z-index: 1;
 
   @media (max-width: 1024px) {
     padding: 41px 32px 34px;
@@ -481,6 +481,8 @@ html {
   }
 
   &.thankyou {
+    color: #ffff;
+    
     h2 {
       font-size: 108px;
       line-height: 1.2;
@@ -499,7 +501,7 @@ html {
     }
 
     @media (max-width: 1000px) {
-      padding-top: 0;
+      padding-top: 100px;
     }
   }
 
