@@ -330,7 +330,6 @@ html {
   width: 100%;
   max-width: 1135px;
   margin-inline: auto;
-  z-index: 4;
   position: relative;
   text-align: center;
   padding-block: 20px;
@@ -482,7 +481,7 @@ html {
 
   &.thankyou {
     color: #ffff;
-    
+
     h2 {
       font-size: 108px;
       line-height: 1.2;
